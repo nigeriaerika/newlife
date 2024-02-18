@@ -1,1 +1,1 @@
-web: ./test.sh
+web: python3 test.py
