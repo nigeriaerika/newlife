@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_fig_gabriel_newlife_1708419004768-push-trigger-input-set
+  identifier: Build_fig_gabriel_newlife_1708419004768pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_fig_gabriel_newlife_1708419004768
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
