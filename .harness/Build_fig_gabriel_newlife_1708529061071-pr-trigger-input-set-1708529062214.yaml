@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_fig_gabriel_newlife_1708529061071-pr-trigger-input-set
+  identifier: Build_fig_gabriel_newlife_1708529061071prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_fig_gabriel_newlife_1708529061071
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
