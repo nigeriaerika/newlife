@@ -1,0 +1,34 @@
+pipeline:
+  name: x2
+  identifier: x2
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.Github_OAuth_1708529041580
+        repoName: fig-gabriel/newlife
+        build: <+input>
+  stages:
+    - stage:
+        name: x2
+        identifier: x2
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  name: x2
+                  identifier: x2
+                  template:
+                    templateRef: account.elmao
+                    versionLabel: v1
