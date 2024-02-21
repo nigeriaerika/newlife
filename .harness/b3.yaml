@@ -20,7 +20,7 @@ pipeline:
           cloneCodebase: true
           platform:
             os: Linux
-            arch: Arm64
+            arch: Amd64
           runtime:
             type: Cloud
             spec: {}
@@ -30,5 +30,5 @@ pipeline:
                   name: b3
                   identifier: b3
                   template:
-                    templateRef: account.arm64
-                    versionLabel: arm64
+                    templateRef: account.yay
+                    versionLabel: ver1
