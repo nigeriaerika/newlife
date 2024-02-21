@@ -1,0 +1,34 @@
+pipeline:
+  name: a8
+  identifier: a8
+  projectIdentifier: tesst
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.Github_OAuth_1708418859437
+        repoName: fig-gabriel/newlife
+        build: <+input>
+  stages:
+    - stage:
+        name: a8
+        identifier: a8
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Arm64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  name: a8
+                  identifier: a8
+                  template:
+                    templateRef: account.arm64
+                    versionLabel: arm64
