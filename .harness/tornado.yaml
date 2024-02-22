@@ -1,0 +1,34 @@
+pipeline:
+  name: tornado
+  identifier: tornado
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.Github_OAuth_1708529041580
+        repoName: fig-gabriel/newlife
+        build: <+input>
+  stages:
+    - stage:
+        name: a
+        identifier: a
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  name: a
+                  identifier: a
+                  template:
+                    templateRef: account.elmao
+                    versionLabel: v1
