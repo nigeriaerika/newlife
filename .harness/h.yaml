@@ -1,0 +1,34 @@
+pipeline:
+  name: h
+  identifier: h
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.Github_OAuth_1708716129236
+        repoName: fig-gabriel/newlife
+        build: <+input>
+  stages:
+    - stage:
+        name: h
+        identifier: h
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  name: h
+                  identifier: h
+                  template:
+                    templateRef: account.a
+                    versionLabel: a
