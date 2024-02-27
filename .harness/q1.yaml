@@ -1,0 +1,36 @@
+pipeline:
+  name: q1
+  identifier: q1
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: keith
+        build: <+input>
+  stages:
+    - stage:
+        name: q1
+        identifier: c
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  name: c
+                  identifier: c
+                  template:
+                    templateRef: account.yes
+                    versionLabel: "yes"
+          caching:
+            enabled: false
+            paths: []
