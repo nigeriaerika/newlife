@@ -1,0 +1,33 @@
+pipeline:
+  name: chizzka
+  identifier: chizzka
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: keith
+        build: <+input>
+  stages:
+    - stage:
+        name: stinkymonsta
+        identifier: stinkymonsta
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  name: a
+                  identifier: a
+                  template:
+                    templateRef: account.yes
+                    versionLabel: "yes"
