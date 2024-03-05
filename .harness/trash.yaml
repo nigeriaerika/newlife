@@ -1,0 +1,33 @@
+pipeline:
+  name: trash
+  identifier: trash
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: keith
+        build: <+input>
+  stages:
+    - stage:
+        name: trash
+        identifier: trash
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  name: a
+                  identifier: a
+                  template:
+                    templateRef: account.yes
+                    versionLabel: "yes"
