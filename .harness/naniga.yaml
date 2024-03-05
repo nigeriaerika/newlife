@@ -1,0 +1,33 @@
+pipeline:
+  name: naniga
+  identifier: naniga
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: keith
+        build: <+input>
+  stages:
+    - stage:
+        name: naniga
+        identifier: naniga
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  name: na
+                  identifier: na
+                  template:
+                    templateRef: account.yes
+                    versionLabel: "yes"
