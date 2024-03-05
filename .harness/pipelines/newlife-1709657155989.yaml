@@ -13,12 +13,11 @@ pipeline:
           execution:
             steps:
               - step:
-                  type: Run
-                  name: Echo Welcome Message
-                  identifier: Echo_Welcome_Message
-                  spec:
-                    shell: Sh
-                    command: echo "Welcome to Harness CI"
+                  name: news
+                  identifier: news
+                  template:
+                    templateRef: account.yes
+                    versionLabel: "yes"
           platform:
             os: Linux
             arch: Amd64
