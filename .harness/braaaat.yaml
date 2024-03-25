@@ -1,0 +1,33 @@
+pipeline:
+  name: braaaat
+  identifier: braaaat
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: uhuh
+        build: <+input>
+  stages:
+    - stage:
+        name: braaaaaaaat
+        identifier: braaaaaaaat
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  name: s
+                  identifier: s
+                  template:
+                    templateRef: account.yep
+                    versionLabel: "1"
