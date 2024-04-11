@@ -1,0 +1,33 @@
+pipeline:
+  name: jeezchills
+  identifier: jeezchills
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: uhuh
+        build: <+input>
+  stages:
+    - stage:
+        name: struggke
+        identifier: struggke
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  name: qasted
+                  identifier: qasted
+                  template:
+                    templateRef: yay
+                    versionLabel: yay1
