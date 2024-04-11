@@ -1,0 +1,33 @@
+pipeline:
+  name: moominnoowww
+  identifier: moominnoowww
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: uhuh
+        build: <+input>
+  stages:
+    - stage:
+        name: a
+        identifier: a
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  name: a
+                  identifier: a
+                  template:
+                    templateRef: yay
+                    versionLabel: yay1
