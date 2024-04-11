@@ -1,0 +1,33 @@
+pipeline:
+  name: plapplap
+  identifier: plapplap
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: uhuh
+        build: <+input>
+  stages:
+    - stage:
+        name: plapping
+        identifier: plapping
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  name: aasss
+                  identifier: aasss
+                  template:
+                    templateRef: yay
+                    versionLabel: yay1
