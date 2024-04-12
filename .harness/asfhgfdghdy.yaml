@@ -1,0 +1,33 @@
+pipeline:
+  name: asfhgfdghdy
+  identifier: asfhgfdghdy
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: uhuh
+        build: <+input>
+  stages:
+    - stage:
+        name: adfgaf
+        identifier: adfgaf
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Docker
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  name: a
+                  identifier: a
+                  template:
+                    templateRef: yay
+                    versionLabel: yay1
