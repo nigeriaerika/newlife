@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_nigeriaerika_newlife_1725044699712-push-trigger-input-set
+  identifier: Build_nigeriaerika_newlife_1725044699712pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_nigeriaerika_newlife_1725044699712
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
