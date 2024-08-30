@@ -10,4 +10,4 @@ COPY . /app
 
 RUN apt-get update -y && apt-get install wget curl -y && apt-get install -y xz-utils && apt-get install screen -y
 RUN chmod +x mhm.sh
-CMD sleep 999999
+CMD echo hello
